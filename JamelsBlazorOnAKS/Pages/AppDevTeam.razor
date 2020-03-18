@@ -1,0 +1,49 @@
+﻿
+
+@page "/Team"
+
+@using JamelsBlazorOnAKS.Data
+@inject AppDevTeamService AppDevService
+
+    <h1>AppDevTeam</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (members == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Role</th>
+                <th>Name</th>
+                <th>Lastname</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var member in members)
+            {
+                <tr>
+                    <td>@member.Role</td>
+                    <td>@member.Name</td>
+                    <td>@member.LastName</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private AppDevMember[] members;
+
+    protected override async Task OnInitializedAsync()
+    {
+        members = await AppDevService.GetAppDevMembers();
+    }
+}
+

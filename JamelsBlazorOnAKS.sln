@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JamelsBlazorOnAKS", "JamelsBlazorOnAKS\JamelsBlazorOnAKS.csproj", "{DBCA1BF4-0365-4AE7-BBB8-54E0622B1A00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{313CE8D9-FA0C-4213-AFC2-6C34ADC43F99}"
+	ProjectSection(SolutionItems) = preProject
+		AzureAppDev.yaml = AzureAppDev.yaml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBCA1BF4-0365-4AE7-BBB8-54E0622B1A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCA1BF4-0365-4AE7-BBB8-54E0622B1A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCA1BF4-0365-4AE7-BBB8-54E0622B1A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCA1BF4-0365-4AE7-BBB8-54E0622B1A00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB1142C3-D3E4-43FC-930F-2E494632F464}
+	EndGlobalSection
+EndGlobal
